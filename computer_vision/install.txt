@@ -1,0 +1,30 @@
+1. # Install
+pip install opencv-python
+
+2. Download all xml from follwoing links and keep in folder ./model/haarcascades
+https://github.com/opencv/opencv/tree/master/data/haarcascades
+https://github.com/opencv/opencv_contrib/tree/master/modules/face/data/cascades
+
+3. Download data and images from link
+a. video from link https://www.youtube.com/watch?v=neU-pD5KpgM and save in "image_data" folder with filename "horse.mp4"
+or any video of 30 sec
+
+b. Visit the link http://yann.lecun.com/exdb/mnist/ 
+Download files and Keep all 4 files in folder image_data\mnist_yann_lecun
+"t10k-images-idx3-ubyte.gz" "t10k-labels-idx1-ubyte.gz" "train-images-idx3-ubyte.gz" "train-labels-idx1-ubyte.gz"
+
+4.#TensorFlow Object detection
+# Download steps
+# 1. Download models from  https://github.com/tensorflow/models
+# 2. Download protoc-*-win64.zip from https://github.com/protocolbuffers/protobuf/releases
+# 3. Unzip 'models-master.zip' and move to folder models-master\models-master\research
+# 4. copy "protoc.exe" to research folder or set the enviorment path to folder 'protoc-3.6.1-win32\bin"
+# 5. open command prompt in research folder and run "protoc --python_out=. research\object_detection\protos\*.proto"
+# If above throws error then as per discussion at link https://github.com/tensorflow/models/issues/2930 run following
+# for /f %i in ('dir /b object_detection\protos\*.proto') do protoc --python_out=. object_detection\protos\%i
+# Restart the Spyder (or IDE)
+
+
+
+
+
